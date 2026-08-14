@@ -1,0 +1,183 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9534f;
+    padding: 10px 15px;
+    color: white;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+.logo img {
+    max-width: 250px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
+
+.menu-section {
+    background: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.menu-category {
+    margin-bottom: 20px;
+}
+
+.menu-category h3 {
+    color: #d9534f;
+    border-bottom: 2px solid #d9534f;
+    display: inline-block;
+    padding-bottom: 5px;
+    animation: fadeInLeft 0.5s ease-in-out;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+    animation: fadeInRight 0.5s ease-in-out;
+}
+
+.menu-item:hover {
+    background-color: #ffeeee;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    color: white;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInLeft {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeInRight {
+    from { transform: translateX(20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo img {
+        max-width: 150px; /* Smaller logo for mobile */
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduced margin for mobile */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Slightly smaller font size for mobile */
+    }
+
+    .hero h1 {
+        font-size: 2.5em; /* Smaller font size for mobile */
+    }
+
+    .hero p {
+        font-size: 1.2em; /* Smaller font size for mobile */
+    }
+
+    .menu-section {
+        padding: 15px; /* Reduced padding for mobile */
+    }
+
+    .menu-item {
+        flex-direction: row; /* Ensure items are in a row */
+        justify-content: space-between; /* Ensure space between items */
+        align-items: center; /* Center items vertically */
+    }
+
+    .menu-item span {
+        margin: 5px 0;
+        flex: 1; /* Ensure items take up equal space */
+        text-align: left; /* Align text to the left */
+    }
+
+    .menu-item span:last-child {
+        text-align: right; /* Align price to the right */
+    }
+}

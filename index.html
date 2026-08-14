@@ -3,68 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack's Chicken and Fish</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            text-align: center;
-        }
-        header {
-            background-color: #d9534f;
-            padding: 15px;
-            color: white;
-            font-size: 24px;
-        }
-        .logo img {
-            max-width: 200px;
-            margin-top: 10px;
-        }
-        .menu {
-            background: white;
-            padding: 20px;
-            max-width: 600px;
-            margin: auto;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .menu h2 {
-            color: #d9534f;
-        }
-        .menu p {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background: #333;
-            color: white;
-        }
-    </style>
+    <title>Jack's Chicken and Fish - Menu</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css?v=1.0">
 </head>
 <body>
     <header>
-        Jack's Chicken and Fish
+        <div class="logo">
+            <img src="images/logo.png" alt="Jack's Logo">
+        </div>
+		<section class="hero">
+        <h1>Jack's Chicken & Fish</h1>
+        <p>Crispy, Fresh & Local – Proudly Serving the Soo with Love!</p>
+    </section>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="logo">
-        <img src="images/logo.png" alt="Jack's Logo">
-    </div>
-    <div class="menu">
-        <h2>Menu</h2>
-        <p>COD (2 PC) - $21.50</p>
-        <p>HADDOCK (2 PC) - $21.50</p>
-        <p>PICKEREL (2 PC) - $22.99</p>
-        <p>MASALA FISH (2 PC) - $23.99</p>
-        <p>COD FISH BURGER - $13.99</p>
-        <p>HAMBURGER - $10.99</p>
-        <p>CRISPY CHICKEN BURGER - $9.99</p>
-        <p>SPICY CHICKEN BURGER - $9.99</p>
-    </div>
+	
+	
+    
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        
+        <div class="menu-category">
+            <h3>Fish & Chips</h3>
+            <div class="menu-item"><span>COD (2 PC)</span><span>$21.50</span></div>
+            <div class="menu-item"><span>HADDOCK (2 PC)</span><span>$21.50</span></div>
+            <div class="menu-item"><span>PICKEREL (2 PC)</span><span>$22.99</span></div>
+            <div class="menu-item"><span>MASALA FISH (2 PC)</span><span>$23.99</span></div>
+            <div class="menu-item"><span>COD (1 PC)</span><span>$16.50</span></div>
+            <div class="menu-item"><span>HADDOCK (1 PC)</span><span>$16.50</span></div>
+            <div class="menu-item"><span>MASALA FISH (1 PC)</span><span>$16.99</span></div>
+            <div class="menu-item"><span>SHRIMP & FRIES</span><span>$15.50</span></div>
+        </div>
+        
+        <div class="menu-category">
+            <h3>Fish Only</h3>
+            <div class="menu-item"><span>COD (1 PC)</span><span>$9.99</span></div>
+            <div class="menu-item"><span>HADDOCK (1 PC)</span><span>$9.99</span></div>
+            <div class="menu-item"><span>MASALA FISH (1 PC)</span><span>$11.99</span></div>
+            <div class="menu-item"><span>PICKEREL (2 PC)</span><span>$16.50</span></div>
+            <div class="menu-item"><span>SHRIMP</span><span>$11.99</span></div>
+        </div>
+        
+        <div class="menu-category">
+            <h3>Chicken</h3>
+            <div class="menu-item"><span>CHICKEN STRIPS (3 PC)</span><span>$11.99</span></div>
+            <div class="menu-item"><span>CHICKEN WINGS (10)</span><span>$13.99</span></div>
+        </div>
+        
+        <div class="menu-category">
+            <h3>Burgers</h3>
+            <div class="menu-item"><span>COD FISH BURGER</span><span>$13.99</span></div>
+            <div class="menu-item"><span>HAMBURGER</span><span>$10.99</span></div>
+            <div class="menu-item"><span>CRISPY CHICKEN BURGER</span><span>$9.99</span></div>
+            <div class="menu-item"><span>CHICKEN PARM BURGER</span><span>$9.99</span></div>
+            <div class="menu-item"><span>SPICY CHICKEN BURGER</span><span>$9.99</span></div>
+            <div class="menu-item"><span>BUFFALO CHICKEN BURGER</span><span>$10.99</span></div>
+            <div class="menu-item"><span>(EXTRA PATTY)</span><span>$4.25</span></div>
+            <div class="menu-item"><span>(EXTRA CHEESE)</span><span>$2.00</span></div>
+            <div class="menu-item"><span>(EXTRA BACON)</span><span>$2.00</span></div>
+            <div class="menu-item"><span>(EXTRA DIP)</span><span>$1.25</span></div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Make It Combo</h3>
+            <div class="menu-item"><span>FRESH CUT FRIES</span><span>$4.99</span></div>
+            <div class="menu-item"><span>ONION RINGS</span><span>$5.99</span></div>
+            <div class="menu-item"><span>REGULAR POUTINE</span><span>$6.99</span></div>
+            <div class="menu-item"><span>DRINK</span><span>$1.25</span></div>
+			<div class="menu-item"><span>FRESH CUT FRIES + DRINK</span><span>$5.99</span></div>
+        </div>
+		
+		<div class="menu-category">
+            <h3>Hot Dog</h3>
+            <div class="menu-item"><span>HOT DOG</span><span>$5.99</span></div>
+            <div class="menu-item"><span>SAUSAGE</span><span>$8.79</span></div>
+            <div class="menu-item"><span>POGO</span><span>$4.99</span></div>
+        </div>
+        
+        <div class="menu-category">
+            <h3>Appetizers</h3>
+            <div class="menu-item"><span>MOZZA STIX (6 PC)</span><span>$9.99</span></div>
+            <div class="menu-item"><span>DEEP FRIED PICKLES (6 PC)</span><span>$10.99</span></div>
+            <div class="menu-item"><span>DEEP FRIED RAVIOLI</span><span>$10.99</span></div>
+            <div class="menu-item"><span>ONION RINGS (REG)</span><span>$7.99</span></div>
+            <div class="menu-item"><span>ONION RINGS (LARGE)</span><span>$9.99</span></div>
+        </div>
+        
+        <div class="menu-category">
+            <h3>Poutine</h3>
+            <div class="menu-item"><span>REGULAR</span><span>$9.50</span></div>
+            <div class="menu-item"><span>LARGE</span><span>$11.50</span></div>
+            <div class="menu-item"><span>FAMILY</span><span>$13.50</span></div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Fresh Cut Fries</h3>
+            <div class="menu-item"><span>REGULAR</span><span>$6.50</span></div>
+            <div class="menu-item"><span>LARGE</span><span>$8.50</span></div>
+            <div class="menu-item"><span>FAMILY</span><span>$10.50</span></div>
+        </div>
+        
+        <div class="menu-category">
+            <h3>Gravy</h3>
+            <div class="menu-item"><span>SMALL</span><span>$2.99</span></div>
+            <div class="menu-item"><span>MEDIUM</span><span>$4.49</span></div>
+            <div class="menu-item"><span>LARGE</span><span>$6.49</span></div>
+        </div>
+        
+        <div class="menu-category">
+            <h3>Drinks</h3>
+            <div class="menu-item"><span>CAN POP</span><span>$1.25</span></div>
+            <div class="menu-item"><span>WATER BOTTLE</span><span>$1.25</span></div>
+        </div>
+        
+        <div class="menu-category">
+            <h3>Coleslaw</h3>
+            <div class="menu-item"><span>SMALL</span><span>$2.99</span></div>
+            <div class="menu-item"><span>MEDIUM</span><span>$6.49</span></div>
+            <div class="menu-item"><span>LARGE</span><span>$8.99</span></div>
+        </div>
+
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>1177 Great Northern Rd, Sault Ste. Marie, ON</p>
+        <p>Phone: (705) 945-7952</p>
+        <p>Hours: 10 AM - 9 PM</p>
+    </section>
+    
     <footer>
-        1177 Great Northern Rd, Sault Ste. Marie, ON | (705) 945-7952 | 11 AM - 8 PM
+        <p>&copy; 2024 Jack's Chicken and Fish</p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
